@@ -48,13 +48,14 @@
         }
       }
     },
-    "UniqID": {
+    "slug": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "uid"
+      "type": "uid",
+      "targetField": "Title"
     }
   }
 }
