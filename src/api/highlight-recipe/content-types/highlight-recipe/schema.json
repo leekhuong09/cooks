@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "highlight_recipes",
+  "info": {
+    "singularName": "highlight-recipe",
+    "pluralName": "highlight-recipes",
+    "displayName": "Highlight Recipe"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "recipes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recipe.recipe"
+    }
+  }
+}
