@@ -26,9 +26,6 @@
         "audios"
       ]
     },
-    "content": {
-      "type": "richtext"
-    },
     "category": {
       "type": "relation",
       "relation": "manyToOne",
@@ -38,6 +35,36 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "materials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.list"
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.list-step"
+    },
+    "descriptions": {
+      "type": "text"
+    },
+    "servings": {
+      "type": "integer"
+    },
+    "difficult": {
+      "type": "enumeration",
+      "enum": [
+        "Dễ",
+        "Trung Bình",
+        "Khó"
+      ],
+      "default": "Dễ",
+      "required": false
+    },
+    "cooktime": {
+      "type": "integer",
+      "default": 0
     }
   }
 }

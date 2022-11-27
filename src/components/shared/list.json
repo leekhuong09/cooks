@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_lists",
+  "info": {
+    "displayName": "Materials",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "material": {
+      "type": "string"
+    },
+    "measureValue": {
+      "type": "string"
+    }
+  }
+}

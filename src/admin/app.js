@@ -1,3 +1,5 @@
+import injectColumnInTable from "./extensions/injectColumnInTable";
+
 const config = {
   locales: [
     // 'ar',
@@ -30,7 +32,10 @@ const config = {
 };
 
 const bootstrap = (app) => {
-  console.log(app);
+  app.registerHook(
+    "Admin/CM/pages/ListView/inject-column-in-table",
+    injectColumnInTable
+  );
 };
 
 export default {
