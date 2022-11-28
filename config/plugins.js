@@ -12,9 +12,14 @@ module.exports = ({ env }) => ({
   },
   upload: {
     config: {
+      provider: "strapi-provider-upload-ipfs-storage",
       providerOptions: {
-        localServer: {
-          maxage: 300000,
+        defaultStorage: "filebase",
+        filebase: {
+          // https://console.filebase.com/keys
+          key: env("FILEBASE_KEY"),
+          secret: env("FILEBASE_SECRET"),
+          bucket: env("FILEBASE_BUCKET"),
         },
       },
     },
