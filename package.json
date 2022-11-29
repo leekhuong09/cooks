@@ -17,6 +17,7 @@
     "@strapi/plugin-i18n": "4.5.1",
     "@strapi/plugin-seo": "^1.7.7",
     "@strapi/plugin-users-permissions": "4.5.1",
+    "@strapi/provider-upload-cloudinary": "^4.5.2",
     "@strapi/strapi": "4.5.1",
     "better-sqlite3": "7.4.6",
     "cross-env": "^7.0.3",
@@ -25,6 +26,7 @@
     "react-dom": "^18.2.0",
     "react-select": "^5.6.1",
     "strapi-plugin-slugify": "^2.3.1",
+    "strapi-provider-upload-cloudflare-2": "^0.1.4",
     "strapi-provider-upload-ipfs-storage": "^1.0.4"
   },
   "author": {

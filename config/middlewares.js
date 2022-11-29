@@ -4,8 +4,24 @@ module.exports = [
     name: "strapi::security",
     config: {
       contentSecurityPolicy: {
+        useDefaults: true,
         directives: {
-          "img-src": ["'self'", "data:", "blob:", "*.ipfs.dweb.link"],
+          "connect-src": ["'self'", "https:"],
+          "img-src": [
+            "'self'",
+            "data:",
+            "blob:",
+            "dl.airtable.com",
+            "res.cloudinary.com",
+          ],
+          "media-src": [
+            "'self'",
+            "data:",
+            "blob:",
+            "dl.airtable.com",
+            "res.cloudinary.com",
+          ],
+          upgradeInsecureRequests: null,
         },
       },
     },
