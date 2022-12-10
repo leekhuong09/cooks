@@ -7,7 +7,7 @@
     "dev": "strapi develop",
     "start": "strapi start",
     "build": "cross-env NODE_ENV=production strapi build",
-    "web": "cross-env NODE_ENV=production npm start",
+    "web": "cross-env NODE_ENV=production npm run start",
     "strapi": "strapi"
   },
   "devDependencies": {},
