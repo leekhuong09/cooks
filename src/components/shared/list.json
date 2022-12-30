@@ -7,11 +7,13 @@
   },
   "options": {},
   "attributes": {
-    "material": {
-      "type": "string"
-    },
     "measureValue": {
       "type": "string"
+    },
+    "material": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::material.material"
     }
   }
 }
